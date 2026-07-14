@@ -1,0 +1,25 @@
+# Unzipped launcher / server packs (use Downloads zips + Releases instead)
+Season 2/mods/*/
+Season 2/worlds/*/
+
+# Huge archives not meant for GitHub
+Season 2/zipped_versions/*
+Season 2/worlds/*.zip
+Season 2/worlds/*.tar
+Season 2/worlds/*.tar.gz
+
+# Player download packs live on GitHub Releases (too large for git)
+Season 2/downloads/*
+
+# Keep folder placeholders
+!Season 2/downloads/.gitkeep
+!Season 2/mods/.gitkeep
+!Season 2/worlds/.gitkeep
+!Season 2/zipped_versions/.gitkeep
+
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+github-share/
