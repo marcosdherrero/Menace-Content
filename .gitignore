@@ -1,21 +1,15 @@
-# Unzipped launcher / server packs (use Downloads zips + Releases instead)
-Season 2/mods/*/
+# Unzipped world saves (use the world .zip on Releases instead)
 Season 2/worlds/*/
 
-# Huge archives not meant for GitHub
-Season 2/zipped_versions/*
+# World / full dumps over git's 100 MB limit (world zip → Releases; ~29 GB tar → external host)
 Season 2/worlds/*.zip
 Season 2/worlds/*.tar
 Season 2/worlds/*.tar.gz
+Season 2/zipped_versions/**
 
-# Player download packs live on GitHub Releases (too large for git)
-Season 2/downloads/*
-
-# Keep folder placeholders
-!Season 2/downloads/.gitkeep
-!Season 2/mods/.gitkeep
-!Season 2/worlds/.gitkeep
-!Season 2/zipped_versions/.gitkeep
+# Large download packs (>100 MB) live on GitHub Releases — see README
+Season 2/downloads/Menace S2.1 Prism.zip
+Season 2/downloads/Menace S2.1 Curseforge.zip
 
 # OS / editor junk
 Thumbs.db

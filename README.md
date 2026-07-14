@@ -6,30 +6,41 @@
 
 Private downloads and pack layout for friends.
 
-## Downloads (Releases)
+## Downloads
 
-Use **[Releases](https://github.com/marcosdherrero/Menace-Content/releases)** → **v2.1.0**:
+### In this repo
 
-| Asset | What it is |
-|-------|------------|
-| **Menace.S2.1.Prism.zip** | Full Prism Launcher instance |
-| **Menace.S2.1.Modrinth.mrpack** | Modrinth pack installer |
-| **Menace.S2.1.Curseforge.zip** | CurseForge pack |
-| **Menace.S2.1.Essential.Mods.zip** | Essential `mods` folder only |
-| **Menace.S2.1.Datapacks.zip** | Server/world datapacks zip |
+- `Season 2/mods/` — unzipped mod folders (`Menace_Mods_2_0`, `Menace_Mods_2_1`)
+- `Season 2/downloads/` — packs that fit in git (Essential Mods, Datapacks, Modrinth)
+- `Season 2/datapacks/` — individual datapack zips
 
-Pick one launcher pack (Prism / Modrinth / CurseForge). Use **Essential Mods** if you already have an instance and only need the mod set. Use **Datapacks** to drop the Season 2 datapacks into a world or server.
+### On Releases (files over GitHub’s 100 MB git limit)
+
+Use **[Releases → v2.1.0](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.0)**:
+
+| Asset | What it is | Local path (your PC) |
+|-------|------------|----------------------|
+| **Menace.S2.1.Prism.zip** | Full Prism Launcher instance | `Season 2/downloads/` |
+| **Menace.S2.1.Curseforge.zip** | CurseForge pack | `Season 2/downloads/` |
+| **Menace.S2.1.Modrinth.mrpack** | Modrinth pack installer | also in repo `downloads/` |
+| **Menace.S2.1.Essential.Mods.zip** | Essential mods zip | also in repo `downloads/` |
+| **Menace.S2.1.Datapacks.zip** | Datapacks zip | also in repo `downloads/` |
+| **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Pruned world save | `Season 2/worlds/` |
+
+Pick one launcher pack (Prism / Modrinth / CurseForge). Use **Essential Mods** if you already have an instance. Use **Datapacks** for world/server datapacks.
+
+### Not on GitHub
+
+`Season 2/zipped_versions/Menace_7_8_26.tar.gz` is ~29 GB — over GitHub’s **2 GB** release-asset limit and far over git’s **100 MB** file limit. Host it elsewhere (Drive, Mega, etc.) if friends need it. No special git uploader can bypass that.
 
 ## Repo layout
 
 ```
 Season 2/
-  imgs/          brand art (logo)
-  datapacks/     individual datapack zips by Minecraft version
-  downloads/     built packs (local only — published via Releases)
-  mods/          unzipped mod folders (local only — ignored)
-  worlds/        world saves (local only — ignored)
-  zipped_versions/  large archives (local only — ignored)
+  imgs/              brand art (logo)
+  datapacks/         individual datapack zips
+  downloads/         packs (large Prism/CurseForge → Releases only)
+  mods/              unzipped mod folders
+  worlds/            world .zip on Releases; unzipped saves stay local
+  zipped_versions/   full dump too large for GitHub
 ```
-
-Unzipped mod folders and world saves are **not** committed. Download the zips from Releases instead.
