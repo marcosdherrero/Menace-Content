@@ -16,18 +16,26 @@ Private downloads and pack layout for friends.
 
 ### On Releases (files over GitHub’s 100 MB git limit)
 
-Use **[Releases → v2.1.0](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.0)**:
+Use **[Releases → v2.1.2](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.2)**:
 
 | Asset | What it is | Local path (your PC) |
 |-------|------------|----------------------|
-| **Menace.S2.1.Prism.zip** | Full Prism Launcher instance | `Season 2/downloads/` |
-| **Menace.S2.1.Curseforge.zip** | CurseForge pack | `Season 2/downloads/` |
-| **Menace.S2.1.Modrinth.mrpack** | Modrinth pack installer | also in repo `downloads/` |
-| **Menace.S2.1.Essential.Mods.zip** | Essential mods zip | also in repo `downloads/` |
-| **Menace.S2.1.Datapacks.zip** | Datapacks zip | also in repo `downloads/` |
+| **Menace.S2.1.2.Prism.zip** | Full Prism Launcher instance | `Season 2/downloads/` |
+| **Menace.S2.1.2.Curseforge.zip** | CurseForge pack | `Season 2/downloads/` |
+| **Menace.S2.1.2.Modrinth.mrpack** | Modrinth pack installer | also in repo `downloads/` |
+| **Menace.S2.1.2.Essential.Mods.zip** | Essential mods zip | also in repo `downloads/` |
+| **Menace.S2.1.2.Datapacks.zip** | Datapacks zip | also in repo `downloads/` |
 | **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Pruned world save | `Season 2/worlds/` |
 
 Pick one launcher pack (Prism / Modrinth / CurseForge). Use **Essential Mods** if you already have an instance. Use **Datapacks** for world/server datapacks.
+
+### S2.1.2 notes
+
+- **FairStructureLoot 1.0.2** — C2ME watchdog fix (`getBlockEntity` during chunk scan)
+- **Removed name colors datapack** — it created persisted scoreboard teams that spammed Waystones rate-limits on boot
+- **JEI** stays in client packs (Prism / CurseForge / Modrinth / Essential). Do **not** install JEI on the dedicated server jar folder
+- Resource packs (VT Aesthetic / Bars / Util) are included in the Prism zip but **not enabled** in `options.txt` (`resourcePacks:["vanilla"]`) — enable in-game if you want them
+- After removing name colors, clear leftover teams once on the server: `/team list` then `/team remove <name_colors.*>` (or leave them unused; boot spam stops once they are gone)
 
 ### Not on GitHub
 
