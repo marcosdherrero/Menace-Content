@@ -34,7 +34,7 @@ Pick one launcher pack (Prism / Modrinth / CurseForge). Use **Essential Mods** i
 
 ### S2.1.4 notes
 
-- **VanillaPlusAccents 1.0.2** — path speed no longer changes FOV (client excludes path/mud speed modifiers from FOV)
+- **VanillaPlusAccents 1.0.1** — path speed persists through jumps / Slow Falling, and path/mud modifiers are excluded from FOV zoom
 - **FairStructureLoot 1.0.2** — unchanged
 - **`Menace_Mods_2_1`** synced from live Prism instance (full client mod set)
 - **Essential Mods** refreshed to current Prism versions; **JEI removed** from Essential (still in client packs)
@@ -44,7 +44,7 @@ Pick one launcher pack (Prism / Modrinth / CurseForge). Use **Essential Mods** i
 
 ### S2.1.3 notes (prior)
 
-- VanillaPlusAccents 1.0.1 — path speed persists through jumps / Slow Falling
+- VanillaPlusAccents 1.0.1 — path speed jump/Slow Falling persistence (FOV exclusion added in the S2.1.4 rebuild of the same 1.0.1 jar)
 - Lean packs introduced; world `Menace_S2.1.1` Lootr-cleaned on that release
 
 ### S2.1.2 notes (prior)
