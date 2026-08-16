@@ -8,14 +8,14 @@ Private downloads and pack layout for friends.
 
 ## Downloads
 
-### Pack products (S2.1.4)
+### Pack products (S2.1.5)
 
 Two folders under `Season 2/downloads/`:
 
 | Folder | What it is |
 |--------|------------|
 | **`essential_mods_menace/`** | Server-safe mods (~66 jars, **no JEI** / no Sodium·Iris·Mod Menu·minimap etc.) + Menace server entry + resource packs **included but inactive** |
-| **`client_adds_menace/`** | Full Prism client mod set (~134 jars, includes JEI + client-only) + same server entry + packs inactive |
+| **`client_adds_menace/`** | Full Prism client mod set (~135 jars, includes JEI + client-only) + same server entry + packs inactive |
 
 Each folder has Prism / CurseForge / Modrinth variants (Essential also has a plain `Essential.Mods.zip` for dropping jars onto a server).
 
@@ -23,22 +23,22 @@ Each folder has Prism / CurseForge / Modrinth variants (Essential also has a pla
 
 - `F:\Games\Minecraft Things\Menace\Season 2\downloads\essential_mods_menace\`
 - `F:\Games\Minecraft Things\Menace\Season 2\downloads\client_adds_menace\`
-- Mirrored in this repo under `Season 2/downloads/…` (Essential Mods.zip + Client Modrinth in git; large Prism/CurseForge/Essential instance packs on Releases only)
+- Mirrored in this repo under `Season 2/downloads/…` (Essential Mods.zip in git; large Prism/CurseForge/Modrinth instance packs on Releases only)
 
 ### On Releases (over GitHub’s 100 MB git limit)
 
-Use **[Releases → v2.1.4](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.4)**:
+Use **[Releases → v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**:
 
 | Asset | What it is |
 |-------|------------|
-| **Menace.S2.1.4.Essential.Prism.zip** | Essential Prism instance |
-| **Menace.S2.1.4.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
-| **Menace.S2.1.4.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
-| **Menace.S2.1.4.Essential.Mods.zip** | Essential mods folder only (dedicated server) |
-| **Menace.S2.1.4.Client.Prism.zip** | Full client Prism instance |
-| **Menace.S2.1.4.Client.Curseforge.zip** | Full client CurseForge pack |
-| **Menace.S2.1.4.Client.Modrinth.mrpack** | Full client Modrinth pack |
-| **Menace.S2.1.4.Datapacks.zip** | Datapacks zip (**no name colors**) |
+| **Menace.S2.1.5.Essential.Prism.zip** | Essential Prism instance |
+| **Menace.S2.1.5.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
+| **Menace.S2.1.5.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
+| **Menace.S2.1.5.Essential.Mods.zip** | Essential mods folder only (dedicated server) |
+| **Menace.S2.1.5.Client.Prism.zip** | Full client Prism instance |
+| **Menace.S2.1.5.Client.Curseforge.zip** | Full client CurseForge pack |
+| **Menace.S2.1.5.Client.Modrinth.mrpack** | Full client Modrinth pack |
+| **Menace.S2.1.5.Datapacks.zip** | Datapacks zip (**no name colors**) |
 | **Menace.SMP.Season.2.Menace_S2.1.1.LootrCleaned.July.31.2026.zip** | World save (`Menace_S2.1.1`) |
 | **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Older pruned world (v2.1.0) |
 
@@ -49,18 +49,27 @@ Pick **Essential** to match the dedicated server / minimal connect set. Pick **C
 - **Menace server** — `servers.dat` from Prism (`Mennacce` / `208.84.103.237:25578`)
 - **Resource packs** — VT Aesthetic / Bars / Util copied from the Prism instance, but `options.txt` has `resourcePacks:["vanilla"]` only (not active)
 - **Shaders** — none shipped from the instance (folder empty); Client packs set `config/iris.properties` with `enableShaders=false`
-- **VPA 1.0.1** — FOV / path-speed fix; **FSL 1.0.2**
+- **VPA 1.0.2** — flower patches break with the block below; stonecutter woodcutting (stairs/slabs/fences/gates); **FSL 1.0.2**
 - **No name colors** datapack
 
 ### Also in this repo
 
 - `Season 2/mods/` — unzipped mod folders (`Menace_Mods_2_0`, `Menace_Mods_2_1`)
 - `Season 2/datapacks/` — individual datapack zips
-- `Season 2/downloads/Menace S2.1.4 Datapacks.zip` — datapacks bundle
+- `Season 2/downloads/Menace.S2.1.5.Datapacks.zip` — datapacks bundle
 
 **Server world replace:** unzip so the folder is named `Menace_S2.1.1`, set `level-name=Menace_S2.1.1` in `server.properties`, backup the old world first.
 
-### S2.1.4 notes
+### S2.1.5 notes
+
+- Synced from the live Prism instance (`Menace S2.1(1)`)
+- **VanillaPlusAccents 1.0.2** — flower patches break when support is removed; 3–4 flower layouts; stonecutter plank stairs/slabs, log→fence, log→fence gate
+- **ClientSort** added to the full client set
+- **Essential** — same ~66 server-oriented jars with VPA 1.0.2 (no JEI / Sodium / Iris / Mod Menu / minimap)
+- **Client** — full live Prism mod set (~135 jars), including Flashback in Prism/CurseForge/Modrinth release assets
+- **Datapacks** — unchanged from S2.1.4 (name colors remains removed)
+
+### S2.1.4 notes (prior)
 
 - Split pack products into **essential_mods_menace** vs **client_adds_menace**
 - **VanillaPlusAccents 1.0.1** — path speed persists through jumps / Slow Falling; path/mud modifiers excluded from FOV zoom
