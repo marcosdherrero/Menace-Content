@@ -10,6 +10,9 @@ Season 2/zipped_versions/**
 # Individual jars over git's 100 MB limit (still in Prism/CurseForge release packs)
 Season 2/mods/**/Flashback*.jar
 
+# Client jars moved out of Menace_Mods_2_1 (folder is essential/server only)
+Season 2/mods/_aside_client_*/
+
 # Large download packs (>100 MB) live on GitHub Releases — see README
 Season 2/downloads/Menace S2.1 Prism.zip
 Season 2/downloads/Menace S2.1 Curseforge.zip

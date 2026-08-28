@@ -10,14 +10,9 @@ Private downloads and pack layout for friends.
 
 ### Pack products (S2.1.6)
 
-Two folders under `Season 2/downloads/`:
+`Season 2/mods/Menace_Mods_2_1` is the **Essential / dedicated-server set** (~66 jars). No Sodium, Iris, JEI, Axiom, Litematica, Flashback, or minimap.
 
-| Folder | What it is |
-|--------|------------|
-| **`essential_mods_menace/`** | Server-safe mods (~66 jars, **no JEI** / no Sodium·Iris·Mod Menu·minimap etc.) + Menace server entry + resource packs **included but inactive** |
-| **`client_adds_menace/`** | Full Prism client mod set (~135 jars, includes JEI + client-only) + same server entry + packs inactive |
-
-Essential has Prism / CurseForge / Modrinth variants plus a plain `Essential.Mods.zip` for dropping jars onto a server. **Client and server must use the same Essential jars** (especially Waystones + Shogi).
+**`Menace.S2.1.6.Essential.Mods.zip`** has those jars at the **zip root** (unzip straight into the Lagless `/mods` folder). **Client and server must use the same Essential jars** (especially Waystones + Shogi).
 
 **Local paths (your PC):**
 
@@ -34,12 +29,12 @@ Use **[Releases → v2.1.6](https://github.com/marcosdherrero/Menace-Content/rel
 | **Menace.S2.1.6.Essential.Prism.zip** | Essential Prism instance |
 | **Menace.S2.1.6.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
 | **Menace.S2.1.6.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
-| **Menace.S2.1.6.Essential.Mods.zip** | Essential mods folder only (dedicated server) |
+| **Menace.S2.1.6.Essential.Mods.zip** | Essential jars at zip root (unzip into Lagless `/mods`) |
 | **Menace.S2.1.6.Datapacks.zip** | Datapacks zip (**no name colors**) |
 | **Menace.SMP.Season.2.Menace_S2.1.1.LootrCleaned.July.31.2026.zip** | World save (`Menace_S2.1.1`) |
 | **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Older pruned world (v2.1.0) |
 
-Pick **Essential** to match the dedicated server. Full client instance packs (Prism / CurseForge / Modrinth, including Flashback) stay on **[v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**; updated client-only jars for this bump live in `Season 2/mods/Menace_Mods_2_1`.
+Upload **Menace.S2.1.6.Essential.Mods.zip** to the dedicated server (Lagless `/mods`). Full client instance packs stay on **[v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**. Clients still need the same Essential jars (especially Waystones + Shogi) plus their usual client-only mods.
 
 ### Pack contents (both folders)
 
@@ -51,7 +46,7 @@ Pick **Essential** to match the dedicated server. Full client instance packs (Pr
 
 ### Also in this repo
 
-- `Season 2/mods/` — unzipped mod folders (`Menace_Mods_2_0`, `Menace_Mods_2_1`)
+- `Season 2/mods/Menace_Mods_2_1` — Essential/server jars only (matches the S2.1.6 zip)
 - `Season 2/datapacks/` — individual datapack zips
 - `Season 2/downloads/Menace.S2.1.6.Datapacks.zip` — datapacks bundle
 
@@ -64,7 +59,8 @@ Pick **Essential** to match the dedicated server. Full client instance packs (Pr
 - **NaturalMobDrops 1.0.1** — egg/head rates match vanilla wither-skeleton skull chance (2.5%)
 - Fabric API 0.155.2, Lithium 0.24.7, Voice chat 2.6.22, plus other 26.1.2 patch updates (Architectury, Friends&Foes, Tom's Storage, Traveler's Backpack, …)
 - **Not included:** Async, Sodium 0.9.2-alpha, DBTools 2.2.2_AX, any 26.2-only VPA
-- **Client instance packs** were not rebuilt; client-only jar bumps (Iris, Jade, JEI, Xaero, Litematica, …) are in `Menace_Mods_2_1`
+- **`Menace_Mods_2_1` is essential-only** — client jars (Sodium, Iris, JEI, Axiom, Litematica, Flashback, Xaero, …) were moved aside, not shipped
+- **Essential.Mods.zip** — 66 jars at zip root for Lagless `/mods`
 - **Datapacks** — unchanged from S2.1.5
 
 ### S2.1.5 notes (prior)
