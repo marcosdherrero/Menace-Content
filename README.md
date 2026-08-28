@@ -8,7 +8,7 @@ Private downloads and pack layout for friends.
 
 ## Downloads
 
-### Pack products (S2.1.5)
+### Pack products (S2.1.6)
 
 Two folders under `Season 2/downloads/`:
 
@@ -17,7 +17,7 @@ Two folders under `Season 2/downloads/`:
 | **`essential_mods_menace/`** | Server-safe mods (~66 jars, **no JEI** / no Sodium·Iris·Mod Menu·minimap etc.) + Menace server entry + resource packs **included but inactive** |
 | **`client_adds_menace/`** | Full Prism client mod set (~135 jars, includes JEI + client-only) + same server entry + packs inactive |
 
-Each folder has Prism / CurseForge / Modrinth variants (Essential also has a plain `Essential.Mods.zip` for dropping jars onto a server).
+Essential has Prism / CurseForge / Modrinth variants plus a plain `Essential.Mods.zip` for dropping jars onto a server. **Client and server must use the same Essential jars** (especially Waystones + Shogi).
 
 **Local paths (your PC):**
 
@@ -27,40 +27,47 @@ Each folder has Prism / CurseForge / Modrinth variants (Essential also has a pla
 
 ### On Releases (over GitHub’s 100 MB git limit)
 
-Use **[Releases → v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**:
+Use **[Releases → v2.1.6](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.6)**:
 
 | Asset | What it is |
 |-------|------------|
-| **Menace.S2.1.5.Essential.Prism.zip** | Essential Prism instance |
-| **Menace.S2.1.5.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
-| **Menace.S2.1.5.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
-| **Menace.S2.1.5.Essential.Mods.zip** | Essential mods folder only (dedicated server) |
-| **Menace.S2.1.5.Client.Prism.zip** | Full client Prism instance |
-| **Menace.S2.1.5.Client.Curseforge.zip** | Full client CurseForge pack |
-| **Menace.S2.1.5.Client.Modrinth.mrpack** | Full client Modrinth pack |
-| **Menace.S2.1.5.Datapacks.zip** | Datapacks zip (**no name colors**) |
+| **Menace.S2.1.6.Essential.Prism.zip** | Essential Prism instance |
+| **Menace.S2.1.6.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
+| **Menace.S2.1.6.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
+| **Menace.S2.1.6.Essential.Mods.zip** | Essential mods folder only (dedicated server) |
+| **Menace.S2.1.6.Datapacks.zip** | Datapacks zip (**no name colors**) |
 | **Menace.SMP.Season.2.Menace_S2.1.1.LootrCleaned.July.31.2026.zip** | World save (`Menace_S2.1.1`) |
 | **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Older pruned world (v2.1.0) |
 
-Pick **Essential** to match the dedicated server / minimal connect set. Pick **Client** for the full experience (performance, JEI, minimap, shaders available but off by default).
+Pick **Essential** to match the dedicated server. Full client instance packs (Prism / CurseForge / Modrinth, including Flashback) stay on **[v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**; updated client-only jars for this bump live in `Season 2/mods/Menace_Mods_2_1`.
 
 ### Pack contents (both folders)
 
 - **Menace server** — `servers.dat` from Prism (`Mennacce` / `208.84.103.237:25578`)
 - **Resource packs** — VT Aesthetic / Bars / Util copied from the Prism instance, but `options.txt` has `resourcePacks:["vanilla"]` only (not active)
 - **Shaders** — none shipped from the instance (folder empty); Client packs set `config/iris.properties` with `enableShaders=false`
-- **VPA 1.0.2** — flower patches break with the block below; stonecutter woodcutting (stairs/slabs/fences/gates); **FSL 1.0.2**
+- **VPA 1.0.4** — fence-lead hitch / catenary / shears, flush signs, flower patches, stonecutter woodcutting; **FSL 1.0.2**; **NMD 1.0.1**
 - **No name colors** datapack
 
 ### Also in this repo
 
 - `Season 2/mods/` — unzipped mod folders (`Menace_Mods_2_0`, `Menace_Mods_2_1`)
 - `Season 2/datapacks/` — individual datapack zips
-- `Season 2/downloads/Menace.S2.1.5.Datapacks.zip` — datapacks bundle
+- `Season 2/downloads/Menace.S2.1.6.Datapacks.zip` — datapacks bundle
 
 **Server world replace:** unzip so the folder is named `Menace_S2.1.1`, set `level-name=Menace_S2.1.1` in `server.properties`, backup the old world first.
 
-### S2.1.5 notes
+### S2.1.6 notes
+
+- **Waystones 26.1.2.14 + Shogi 26.1.2.8 + Balm 26.1.2.12** — put this Essential zip on **both** the dedicated server and every client so Waystones matches
+- **VanillaPlusAccents 1.0.4** (26.1.2) — fence-lead hitch/catenary/shears, flush signs; sneak-shear item frames is **not** in this 26.1.2 jar (that is unreleased 1.0.7 on 26.2)
+- **NaturalMobDrops 1.0.1** — egg/head rates match vanilla wither-skeleton skull chance (2.5%)
+- Fabric API 0.155.2, Lithium 0.24.7, Voice chat 2.6.22, plus other 26.1.2 patch updates (Architectury, Friends&Foes, Tom's Storage, Traveler's Backpack, …)
+- **Not included:** Async, Sodium 0.9.2-alpha, DBTools 2.2.2_AX, any 26.2-only VPA
+- **Client instance packs** were not rebuilt; client-only jar bumps (Iris, Jade, JEI, Xaero, Litematica, …) are in `Menace_Mods_2_1`
+- **Datapacks** — unchanged from S2.1.5
+
+### S2.1.5 notes (prior)
 
 - Synced from the live Prism instance (`Menace S2.1(1)`)
 - **VanillaPlusAccents 1.0.2** — flower patches break when support is removed; 3–4 flower layouts; stonecutter plank stairs/slabs, log→fence, log→fence gate
