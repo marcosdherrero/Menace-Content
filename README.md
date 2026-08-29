@@ -8,51 +8,59 @@ Private downloads and pack layout for friends.
 
 ## Downloads
 
-### Pack products (S2.1.6)
+### Pack products (S2.1.7)
 
-`Season 2/mods/Menace_Mods_2_1` is the **Essential / dedicated-server set** (~66 jars). No Sodium, Iris, JEI, Axiom, Litematica, Flashback, or minimap.
+`Season 2/mods/Menace_Mods_2_1` is the **Essential / dedicated-server set** (66 jars). No Sodium, Iris, JEI, Axiom, Litematica, Flashback, or minimap.
 
-**`Menace.S2.1.6.Essential.Mods.zip`** has those jars at the **zip root** (unzip straight into the Lagless `/mods` folder). **Client and server must use the same Essential jars** (especially Waystones + Shogi).
+Two **separate** zip assets (not nested):
 
-**Local paths (your PC):**
+| Zip | What it is |
+|-----|------------|
+| **`Menace.S2.1.7.Essential.Mods.zip`** | 66 server-safe jars at the **zip root**. Unzip straight into Lagless `/mods`. |
+| **`Menace.S2.1.7.Extended.Mods.zip`** | Those same Essential jars **plus** client mods (Sodium, Iris, JEI, Axiom, …) and Prism settings (`mods/`, `config/`, `options.txt`, `servers.dat`, resource packs). Unzip into a Prism `minecraft` folder. |
 
-- `F:\Games\Minecraft Things\Menace\Season 2\downloads\essential_mods_menace\`
-- `F:\Games\Minecraft Things\Menace\Season 2\downloads\client_adds_menace\`
-- Mirrored in this repo under `Season 2/downloads/…` (Essential Mods.zip in git; large Prism/CurseForge/Modrinth instance packs on Releases only)
+**Client and server must use the same Essential jars** (especially Waystones + Shogi).
 
 ### On Releases (over GitHub’s 100 MB git limit)
 
-Use **[Releases → v2.1.6](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.6)**:
+Use **[Releases → v2.1.7](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.7)**:
 
 | Asset | What it is |
 |-------|------------|
-| **Menace.S2.1.6.Essential.Prism.zip** | Essential Prism instance |
-| **Menace.S2.1.6.Essential.Curseforge.zip** | Essential CurseForge pack (jars in overrides) |
-| **Menace.S2.1.6.Essential.Modrinth.mrpack** | Essential Modrinth pack (jars in overrides) |
-| **Menace.S2.1.6.Essential.Mods.zip** | Essential jars at zip root (unzip into Lagless `/mods`) |
-| **Menace.S2.1.6.Datapacks.zip** | Datapacks zip (**no name colors**) |
-| **Menace.SMP.Season.2.Menace_S2.1.1.LootrCleaned.July.31.2026.zip** | World save (`Menace_S2.1.1`) |
-| **Menace.SMP.Season.2.Pruned.July.9.2026.zip** | Older pruned world (v2.1.0) |
+| **Menace.S2.1.7.Essential.Mods.zip** | Essential jars at zip root (Lagless `/mods`) — also in git |
+| **Menace.S2.1.7.Extended.Mods.zip** | Essential + client mods + configs (too large for git) |
+| **Menace.S2.1.7.Datapacks.zip** | Current Season 2 datapacks (**no name colors**, **no wood stripper**) |
 
-Upload **Menace.S2.1.6.Essential.Mods.zip** to the dedicated server (Lagless `/mods`). Full client instance packs stay on **[v2.1.5](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.5)**. Clients still need the same Essential jars (especially Waystones + Shogi) plus their usual client-only mods.
+World saves stay on older releases: **[v2.1.3](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.3)** (`Menace_S2.1.1` Lootr-cleaned) and **[v2.1.0](https://github.com/marcosdherrero/Menace-Content/releases/tag/v2.1.0)** (pruned world).
 
-### Pack contents (both folders)
+Upload **Essential.Mods.zip** to the dedicated server. Friends who want the full client set use **Extended.Mods.zip**.
+
+### Pack contents
 
 - **Menace server** — `servers.dat` from Prism (`Mennacce` / `208.84.103.237:25578`)
-- **Resource packs** — VT Aesthetic / Bars / Util copied from the Prism instance, but `options.txt` has `resourcePacks:["vanilla"]` only (not active)
-- **Shaders** — none shipped from the instance (folder empty); Client packs set `config/iris.properties` with `enableShaders=false`
+- **Resource packs** (Extended) — VT Aesthetic / Bars / Util from the Prism instance
+- **Shaders** — none shipped; Extended `config/iris.properties` has `enableShaders=false`
 - **VPA 1.0.4** — fence-lead hitch / catenary / shears, flush signs, flower patches, stonecutter woodcutting; **FSL 1.0.2**; **NMD 1.0.1**
-- **No name colors** datapack
 
 ### Also in this repo
 
-- `Season 2/mods/Menace_Mods_2_1` — Essential/server jars only (matches the S2.1.6 zip)
-- `Season 2/datapacks/` — individual datapack zips
-- `Season 2/downloads/Menace.S2.1.6.Datapacks.zip` — datapacks bundle
+- `Season 2/mods/Menace_Mods_2_1` — Essential/server jars only (matches the S2.1.7 Essential zip)
+- `Season 2/datapacks/` — individual datapack zips (current set, no wood stripper)
+- `Season 2/downloads/Menace.S2.1.7.Essential.Mods.zip`
+- `Season 2/downloads/Menace.S2.1.7.Datapacks.zip`
+- `Season 2/downloads/Menace.S2.1.7.Extended.Mods.zip` — local copy; published on Releases only (over 100 MB)
 
 **Server world replace:** unzip so the folder is named `Menace_S2.1.1`, set `level-name=Menace_S2.1.1` in `server.properties`, backup the old world first.
 
-### S2.1.6 notes
+### S2.1.7 notes
+
+- **Two zip products** — Essential (server/Lagless) and Extended (full client + settings), same season version, separate assets
+- Essential membership matches Lagless / S2.1.6: **Waystones 26.1.2.14**, **Shogi 26.1.2.8**, **Balm 26.1.2.12**, Fabric API 0.155.2, Lithium 0.24.7, VPA 1.0.4 (26.1.2)
+- Extended adds client mods (Sodium 0.9.1, Iris, JEI 29.33.0.87, Axiom, Litematica, Flashback 0.43.3, Xaero, …) plus Prism `config/` / `options.txt`
+- **Not included:** Async, Sodium 0.9.2-alpha, DBTools 2.2.2_AX, any 26.2-only VPA
+- **Datapacks** — wood stripper removed; T-Birds structures updated to `[1.21.5--26.2]tbirds_structures.zip`
+
+### S2.1.6 notes (prior)
 
 - **Waystones 26.1.2.14 + Shogi 26.1.2.8 + Balm 26.1.2.12** — put this Essential zip on **both** the dedicated server and every client so Waystones matches
 - **VanillaPlusAccents 1.0.4** (26.1.2) — fence-lead hitch/catenary/shears, flush signs; sneak-shear item frames is **not** in this 26.1.2 jar (that is unreleased 1.0.7 on 26.2)
@@ -61,7 +69,6 @@ Upload **Menace.S2.1.6.Essential.Mods.zip** to the dedicated server (Lagless `/m
 - **Not included:** Async, Sodium 0.9.2-alpha, DBTools 2.2.2_AX, any 26.2-only VPA
 - **`Menace_Mods_2_1` is essential-only** — client jars (Sodium, Iris, JEI, Axiom, Litematica, Flashback, Xaero, …) were moved aside, not shipped
 - **Essential.Mods.zip** — 66 jars at zip root for Lagless `/mods`
-- **Datapacks** — unchanged from S2.1.5
 
 ### S2.1.5 notes (prior)
 
@@ -103,10 +110,10 @@ Season 2/
   imgs/              brand art (logo)
   datapacks/         individual datapack zips
   downloads/
-    essential_mods_menace/   Essential Prism/CF/MR + Mods.zip
-    client_adds_menace/      Client Prism/CF/MR (large → Releases)
-    *.Datapacks.zip          datapacks bundle
-  mods/              unzipped mod folders
+    Menace.S2.1.7.Essential.Mods.zip
+    Menace.S2.1.7.Datapacks.zip
+    Menace.S2.1.7.Extended.Mods.zip   (gitignored; on Releases)
+  mods/              unzipped mod folders (Essential only in git)
   worlds/            world .zip on Releases; unzipped saves stay local
   zipped_versions/   full dump too large for GitHub
 ```

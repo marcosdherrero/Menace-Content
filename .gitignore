@@ -7,38 +7,19 @@ Season 2/worlds/*.tar
 Season 2/worlds/*.tar.gz
 Season 2/zipped_versions/**
 
-# Individual jars over git's 100 MB limit (still in Prism/CurseForge release packs)
+# Individual jars over git's 100 MB limit (still in Extended release packs)
 Season 2/mods/**/Flashback*.jar
 
 # Client jars moved out of Menace_Mods_2_1 (folder is essential/server only)
 Season 2/mods/_aside_client_*/
 
-# Large download packs (>100 MB) live on GitHub Releases — see README
-Season 2/downloads/Menace S2.1 Prism.zip
-Season 2/downloads/Menace S2.1 Curseforge.zip
-Season 2/downloads/Menace S2.1.2 Prism.zip
-Season 2/downloads/Menace S2.1.2 Curseforge.zip
-Season 2/downloads/Menace S2.1.3 Prism.zip
-Season 2/downloads/Menace S2.1.3 Curseforge.zip
-Season 2/downloads/Menace S2.1.4 Prism.zip
-Season 2/downloads/Menace S2.1.4 Curseforge.zip
-# S2.1.4 instance packs with bundled jars (>50 MB each) → Releases; Mods.zip + Client.mrpack stay in git
-Season 2/downloads/essential_mods_menace/Menace.S2.1.4.Essential.Prism.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.4.Essential.Curseforge.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.4.Essential.Modrinth.mrpack
-Season 2/downloads/client_adds_menace/Menace.S2.1.4.Client.Prism.zip
-Season 2/downloads/client_adds_menace/Menace.S2.1.4.Client.Curseforge.zip
-# S2.1.5 instance packs (>50 MB) → Releases; Essential.Mods.zip stays in git
-Season 2/downloads/essential_mods_menace/Menace.S2.1.5.Essential.Prism.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.5.Essential.Curseforge.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.5.Essential.Modrinth.mrpack
-Season 2/downloads/client_adds_menace/Menace.S2.1.5.Client.Prism.zip
-Season 2/downloads/client_adds_menace/Menace.S2.1.5.Client.Curseforge.zip
-Season 2/downloads/client_adds_menace/Menace.S2.1.5.Client.Modrinth.mrpack
-# S2.1.6 instance packs (>50 MB) → Releases; Essential.Mods.zip stays in git
-Season 2/downloads/essential_mods_menace/Menace.S2.1.6.Essential.Prism.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.6.Essential.Curseforge.zip
-Season 2/downloads/essential_mods_menace/Menace.S2.1.6.Essential.Modrinth.mrpack
+# Extended pack is ~450 MB (Flashback) — GitHub Releases only
+Season 2/downloads/Menace.S2.1.7.Extended.Mods.zip
+
+# Pack-build scratch (not shipped)
+_staging/
+_packmeta/
+_lookup.json
 
 # OS / editor junk
 Thumbs.db
