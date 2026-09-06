@@ -40,7 +40,7 @@ Upload **Essential.Mods.zip** to the dedicated server. Friends who want the full
 - **Menace server** — `servers.dat` from Prism (`Mennacce` / `208.84.103.237:25578`)
 - **Resource packs** (Extended) — VT Aesthetic / Bars / Util from the Prism instance
 - **Shaders** — none shipped; Extended `config/iris.properties` has `enableShaders=false`
-- **VPA 1.0.4** — fence-lead hitch / catenary / shears, flush signs, flower patches, stonecutter woodcutting; **FSL 1.0.2**; **NMD 1.0.1**
+- **VPA 1.0.5** (26.1.2 only) — fence-lead persist / regrab / 55% attach, sign-on-sign displays, flower bonemeal extra (no wither-rose dupe), expanded stonecutter woodcutting; **FSL 1.0.2**; **NMD 1.0.1**
 
 ### Also in this repo
 
@@ -55,7 +55,7 @@ Upload **Essential.Mods.zip** to the dedicated server. Friends who want the full
 ### S2.1.7 notes
 
 - **Two zip products** — Essential (server/Lagless) and Extended (full client + settings), same season version, separate assets
-- Essential membership matches Lagless / S2.1.6: **Waystones 26.1.2.14**, **Shogi 26.1.2.8**, **Balm 26.1.2.12**, Fabric API 0.155.2, Lithium 0.24.7, VPA 1.0.4 (26.1.2)
+- Essential membership matches Lagless / S2.1.6: **Waystones 26.1.2.14**, **Shogi 26.1.2.8**, **Balm 26.1.2.12**, Fabric API 0.155.2, Lithium 0.24.7, **VPA 1.0.5** (26.1.2 only)
 - Extended adds client mods (Sodium 0.9.1, Iris, JEI 29.33.0.87, Axiom, Litematica, Flashback 0.43.3, Xaero, …) plus Prism `config/` / `options.txt`
 - **Not included:** Async, Sodium 0.9.2-alpha, DBTools 2.2.2_AX, any 26.2-only VPA
 - **Datapacks** — wood stripper removed; T-Birds structures updated to `[1.21.5--26.2]tbirds_structures.zip`
